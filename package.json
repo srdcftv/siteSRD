@@ -1,0 +1,17 @@
+{
+  "name": "srd-seguranca-eletronica",
+  "version": "1.0.0",
+  "description": "Site institucional SRD Segurança Eletrônica",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-sqlite3-wasm": "^0.8.22",
+    "nodemailer": "^6.9.7",
+    "cors": "^2.8.5"
+  }
+}
