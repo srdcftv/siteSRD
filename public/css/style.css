@@ -35,7 +35,13 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background-color: #eef1f4;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.9) 0%, rgba(238,241,244,0) 55%),
+    url("../imagens/bg-pattern.svg");
+  background-size: 100% 900px, 120px 120px;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, fixed;
   color: var(--text);
   line-height: 1.7;
   font-size: 16px;
@@ -100,17 +106,11 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
   padding: calc(var(--nav-h) + 40px) 0 60px; overflow: hidden;
-  background: var(--bg-surface);
+  background: transparent;
 }
 
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(180,180,190,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(180,180,190,0.18) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
+.hero-grid { display: none; }
 .hero-glow {
   position: absolute; top: -30%; left: 50%; transform: translateX(-50%);
   width: 800px; height: 800px; border-radius: 50%;
@@ -249,7 +249,7 @@ img { max-width: 100%; display: block; }
 .service-cta:hover { color: var(--primary-dark); gap: 8px; }
 
 /* ===== SEGMENTOS ===== */
-.segmentos { background: var(--bg-surface); }
+.segmentos { background: rgba(255,255,255,0.55); }
 .segmentos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
 .segmento-card {
   text-align: center; padding: 48px 32px; border-radius: var(--radius-lg);
@@ -319,7 +319,7 @@ img { max-width: 100%; display: block; }
 @keyframes pulse-slow { 0%,100%{ opacity: 0.7; transform: scale(1); } 50%{ opacity: 1; transform: scale(1.02); } }
 
 /* ===== ORÇAMENTO FORM ===== */
-.orcamento { background: var(--bg-surface); }
+.orcamento { background: rgba(255,255,255,0.55); }
 .orcamento-form {
   max-width: 720px; margin: 0 auto; background: var(--bg-card);
   border: 1px solid var(--border); border-radius: var(--radius-lg);
