@@ -36,7 +36,7 @@ async function enviarEmail({ assunto, html, replyTo }) {
         to: [EMAIL_TO],
         reply_to: replyTo || undefined,
         subject: assunto,
-        html,
+        html: `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"></head><body style="font-family:Arial,Helvetica,sans-serif;color:#222">${html}</body></html>`,
       }),
     });
     if (!resp.ok) {

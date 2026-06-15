@@ -9,3 +9,6 @@ npm-debug.log*
 referencias/
 _preview.png
 _live.png
+# Prints/arquivos soltos na raiz (ex.: screenshots de credenciais) - imagens do site ficam em public/imagens/
+/*.png
+/*.jpg
