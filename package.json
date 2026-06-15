@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Site institucional SRD Segurança Eletrônica",
   "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "node src/server.js",
     "dev": "node src/server.js"
