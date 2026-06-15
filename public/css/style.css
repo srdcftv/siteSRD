@@ -35,13 +35,12 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
   font-family: var(--font);
-  background-color: #eef1f4;
-  background-image:
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.9) 0%, rgba(238,241,244,0) 55%),
-    url("../imagens/bg-pattern.svg");
-  background-size: 100% 900px, 120px 120px;
-  background-repeat: no-repeat, repeat;
-  background-attachment: fixed, fixed;
+  background-color: #f4f6f8;
+  background-image: url("../imagens/bg-lowpoly.svg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.7;
   font-size: 16px;
