@@ -35,16 +35,11 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
   font-family: var(--font);
-  background-color: #eef0f3;
-  background-image:
-    url("../imagens/smoke.svg"),
-    radial-gradient(1100px 700px at 82% -8%, rgba(255,255,255,0.95), rgba(255,255,255,0) 60%),
-    radial-gradient(900px 800px at 12% 18%, rgba(206,212,220,0.55), rgba(206,212,220,0) 58%),
-    radial-gradient(1200px 900px at 95% 75%, rgba(190,197,206,0.5), rgba(190,197,206,0) 60%),
-    radial-gradient(800px 700px at 35% 115%, rgba(174,182,192,0.45), rgba(174,182,192,0) 55%),
-    linear-gradient(155deg, #f7f8fa 0%, #e9ecf0 48%, #dde1e6 100%);
-  background-size: 900px 900px, cover, cover, cover, cover, cover;
-  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-color: #eef1f4;
+  background-image: url("../imagens/bg-plexus.svg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--text);
   line-height: 1.7;
