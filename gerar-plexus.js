@@ -55,9 +55,9 @@ pts.forEach((p) => {
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax slice">
 <defs>
   <linearGradient id="bgv" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#f8f9fb"/>
-    <stop offset="55%" stop-color="#eef1f4"/>
-    <stop offset="100%" stop-color="#e4e8ed"/>
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="60%" stop-color="#fbfcfd"/>
+    <stop offset="100%" stop-color="#f3f5f7"/>
   </linearGradient>
   <radialGradient id="glow" cx="50%" cy="12%" r="60%">
     <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>

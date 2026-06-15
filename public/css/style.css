@@ -35,7 +35,7 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
   font-family: var(--font);
-  background-color: #eef1f4;
+  background-color: #fcfcfd;
   background-image: url("../imagens/bg-plexus.svg");
   background-size: cover;
   background-position: center bottom;
