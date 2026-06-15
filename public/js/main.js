@@ -245,6 +245,6 @@ const style = document.createElement('style');
 style.textContent = `
   @keyframes spin { to { transform: rotate(360deg); } }
   .spin { animation: spin 1s linear infinite; }
-  .nav-links a.active-link { color: var(--primary-light) !important; }
+  .nav-links a.active-link { color: var(--primary) !important; }
 `;
 document.head.appendChild(style);
