@@ -35,11 +35,16 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
   font-family: var(--font);
-  background-color: #f4f6f8;
-  background-image: url("../imagens/bg-lowpoly.svg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-color: #eef0f3;
+  background-image:
+    url("../imagens/smoke.svg"),
+    radial-gradient(1100px 700px at 82% -8%, rgba(255,255,255,0.95), rgba(255,255,255,0) 60%),
+    radial-gradient(900px 800px at 12% 18%, rgba(206,212,220,0.55), rgba(206,212,220,0) 58%),
+    radial-gradient(1200px 900px at 95% 75%, rgba(190,197,206,0.5), rgba(190,197,206,0) 60%),
+    radial-gradient(800px 700px at 35% 115%, rgba(174,182,192,0.45), rgba(174,182,192,0) 55%),
+    linear-gradient(155deg, #f7f8fa 0%, #e9ecf0 48%, #dde1e6 100%);
+  background-size: 900px 900px, cover, cover, cover, cover, cover;
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: fixed;
   color: var(--text);
   line-height: 1.7;
@@ -248,7 +253,7 @@ img { max-width: 100%; display: block; }
 .service-cta:hover { color: var(--primary-dark); gap: 8px; }
 
 /* ===== SEGMENTOS ===== */
-.segmentos { background: rgba(255,255,255,0.55); }
+.segmentos { background: transparent; }
 .segmentos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
 .segmento-card {
   text-align: center; padding: 48px 32px; border-radius: var(--radius-lg);
@@ -318,7 +323,7 @@ img { max-width: 100%; display: block; }
 @keyframes pulse-slow { 0%,100%{ opacity: 0.7; transform: scale(1); } 50%{ opacity: 1; transform: scale(1.02); } }
 
 /* ===== ORÇAMENTO FORM ===== */
-.orcamento { background: rgba(255,255,255,0.55); }
+.orcamento { background: transparent; }
 .orcamento-form {
   max-width: 720px; margin: 0 auto; background: var(--bg-card);
   border: 1px solid var(--border); border-radius: var(--radius-lg);
