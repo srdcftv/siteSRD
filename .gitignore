@@ -4,3 +4,8 @@ database/
 *.db
 npm-debug.log*
 .DS_Store
+
+# Referencias e ferramentas de desenvolvimento (nao fazem parte do site)
+referencias/
+_preview.png
+_live.png
