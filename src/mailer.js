@@ -6,13 +6,17 @@ const EMAIL_TO = process.env.EMAIL_TO || EMAIL_USER;
 
 let transporter = null;
 if (EMAIL_USER && EMAIL_PASS) {
+  const port = parseInt(process.env.EMAIL_PORT || '587', 10);
   transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    host: process.env.EMAIL_HOST || 'smtp.gmail.com',
+    port,
+    secure: port === 465, // 465 = SSL direto; 587 = STARTTLS
     auth: { user: EMAIL_USER, pass: EMAIL_PASS },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 20000,
   });
-  console.log('[mailer] Envio de e-mail ativo (' + EMAIL_USER + ' -> ' + EMAIL_TO + ')');
+  console.log('[mailer] Envio de e-mail ativo (' + EMAIL_USER + ' -> ' + EMAIL_TO + ') porta ' + port);
 } else {
   console.warn('[mailer] EMAIL_USER/EMAIL_PASS não configurados — envio de e-mail desativado (os dados continuam salvos no banco).');
 }
